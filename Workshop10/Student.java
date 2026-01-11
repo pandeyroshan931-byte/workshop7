@@ -1,0 +1,38 @@
+package Workshop10;
+
+
+/**
+ * Write a description of class Student here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Student {
+    private int rollNo;
+    private String name;
+    private int marks;
+
+    public Student(int rollNo, String name, int marks) {
+        this.rollNo = rollNo;
+        this.name = name;
+        this.marks = marks;
+    }
+
+    // Getters & Setters
+    public int getRollNo() { return rollNo; }
+    public void setRollNo(int rollNo) { this.rollNo = rollNo; }
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public int getMarks() { return marks; }
+    public void setMarks(int marks) { this.marks = marks; }
+
+    public String calculateResult() {
+        return marks >= 40 ? "Pass" : "Fail";
+    }
+
+    public String toString() {
+        return rollNo + " " + name + " Marks: " + marks;
+    }
+}
